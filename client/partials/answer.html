@@ -1,0 +1,22 @@
+<div ng-controller='questionController'>
+    <header>
+        <a href="#/dashboard">Home</a> |
+        <a href="#/questions/{{showQuestion._id}}">Go back to question</a>
+        <a class='logoff' href="" ng-click='logout()'>Logout</a>
+    </header>
+    <div class="container">
+        <h1>{{showQuestion.question}}</h1>
+        <p>{{showQuestion.description}}</p>
+        <div class="response">
+            <form ng-submit='addAnswer()'>
+                <p ng-if='errors'>{{errors.answer.message}}</p>
+                <label for="answer">Your Answer:</label>
+                <textarea name="answer" class='large' ng-model='answer.answer'></textarea><br>
+                <label for="support">Supporting details <br>for you answer <br>(optional)</label>
+                <textarea name="support" class='large' ng-model='answer.support'></textarea><br>
+                <button type="button" ng-click='cancel()'>Cancel</button>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>

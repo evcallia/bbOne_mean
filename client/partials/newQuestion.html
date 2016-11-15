@@ -1,0 +1,20 @@
+<div ng-controller='questionController'>
+    <header>
+        <a href="#/dashboard">Home</a>
+        <a class='logoff' href="" ng-click='logout()'>Logout</a>
+    </header>
+    <div class="container">
+        <h1>New Question</h1>
+        <div class="question">
+            <form ng-submit='addQuestion()'>
+                <p ng-if='errors'>{{errors.question.message}}</p>
+                <label for="question">Question</label>
+                <textarea name="question" class='large' ng-model='question.question'></textarea><br>
+                <label for="description">Description <br>(optional)</label>
+                <textarea name="description" class='large' ng-model='question.description'></textarea><br>
+                <button type="button" ng-click='cancel()'>Cancel</button>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>

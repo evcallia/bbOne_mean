@@ -1,0 +1,64 @@
+
+.container, header {
+    max-width: 900px;
+    width: 75%;
+    margin: auto;
+}
+#login-form label{
+    margin-right: 50px;
+}
+#login-form input[type='text']{
+    width: 60%;
+}
+#login-form input[type='submit']{
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+header *{
+    display: inline;
+}
+.logoff{
+    float: right;
+}
+.fl-right{
+    float: right;
+}
+table{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+}
+.answers{
+    margin-top: 50px;
+}
+.answer *{
+    margin: 5px;
+}
+.answer{
+    padding: 15px;
+}
+.large{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    resize: none;
+}
+.response label, .question label{
+    vertical-align: top;
+}
+.response button, .question button{
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.response{
+    margin-top: 50px;
+}
